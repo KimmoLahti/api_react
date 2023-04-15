@@ -21,6 +21,6 @@ RUN npm ci --only=production
 COPY ./server ./server
 COPY --from=frontend /app/build ./public
 
-EXPOSE 3000
+EXPOSE 3001
 
 CMD ["npm", "start"]
