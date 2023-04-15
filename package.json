@@ -17,10 +17,12 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
+    "start": "node server.js && react-scripts start",
+    "build": "react-scripts build && copy-server.js",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "copy-server.js": "copy server.js build && echo Server.js copied to build directory"
+
   },
   "proxy": "http://localhost:3001",
   "eslintConfig": {
