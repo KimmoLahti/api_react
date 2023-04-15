@@ -17,11 +17,10 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "start": "node Server.js && react-scripts start",
-    "build": "react-scripts build && copy-Server.js",
+    "start": "react-scripts start",
+    "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "copy-server.js": "copy Server.js build && echo Server.js copied to build directory"
+    "eject": "react-scripts eject"
 
   },
   "proxy": "http://localhost:3001",
